@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPA Calculator</title>
+
+<script src="scripts.js"></script>
+<link rel="stylesheet" href="style.css">   
+
+
+
+</head>
+<body>
+
+
+
+<div class="about">
+<button onclick='abt()' id="alert">About</button>
+
+<p class="logi">GPA Calculator</p>
+</div>
+
+
+
+<br>
+<br><br>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAABTCAMAAAD0rFaKAAABEVBMVEX///8uNo8iHh8qq+L+0wZIR0dIRUcsW6mw4PQ9OjtMgplBPkC3fjzyvA/oqRdBPj72xAvI6fc9rs4zMDHloxnp9vtgwOlJj60sq96ixmHtshPflh7W7vlit6VKbX/6zAjinRuh2vJ8ZErVhSV6yuyTw3FruZxVtbOqyFfajSJqxOpGtuaMwXd7vYq/zUKRb0pLsr2FaUqL0e+33OxDsMbTgig2MzMxrNo8W5qDi7qfp8e4iTm5y0jDfzSed0a3v9jGkzHZ0yYuRpg0UZtIZI6YdEhAap+reUJgZqrMii1uc7HcoSGMj5D93AFRWKLUlyZqttdspr7N0TLt2BHd4+vQ0uZgd4HdrB9JV2uYx9s6nsnZYZvaAAAKg0lEQVRoge2bC3fauBKAVSN7IcQPsKFEhtiB8HB4kwCbNKRJ25SmaUuXtN3b+/9/yB1JtrGNIeT2dN2es3N27bEe8Hk8mhmLFKF/5ZcVMWmAf+U3EMn9H0SXEiV5sgi65+Lib+DrK+OK2dX1b2RyKeNbWQqdfnX5TTDXJJb71/f0X5/wMXn7x6tnXF6/ifZVkwCKlz4K47x9/Swkrw+TIntMhjM0h6N79fbVszV55Y+N3mWiMjcdw/bAD2O4qfzpDl6QfXu48aP+YTGxQ2pXXH8bAT5/Fzb71YzIhMwTpA1IlVhjReZ2XIGfv3rJzl989Gd0wEzWTBubiQL7MjdMsDpT/wwYG31hfnP+5VUI/U6Ta5rRT5TYE+JopslQgq7yEqGXlPkTungWQp8bhlL7FYzeX8hEcZjjHgaDyftzlxh9DYRHOswxLUPbT5aayr4mGwpfcpHF+c6zc6CNZqWFZduWknRkHKKxZZvYpOszkn5ceR++IxjXt7QxsZKPjI4h2zJ79rHg4O9fg5c0rC8sw5YTD4xVssB3M6ptNPlFqIEONWytZiTLjdC1vPj772uqRYh9cBROquDpV8SRbe0uWU/vy9gxMLXfmzD5p5fv3r27+Aod78MdNJUqlm1oCSfSvqY5Mr5DUctSdDbgy3nUf6DxBSY1OeHA2FcMGaotFLc+P52fX1ysN9PASBTN1JK1+W2NYIdm/v+sI24QGl0cx5KdRONi9V4hRItx8y0CeXRIFNkyXiRJPiRYsbGNQrXWYwKjCTZlTUmw7BoiBdds/OLJ5Ats1LA8S5IcDG6S2+pTyfuarWjJLtF9Qojh9J9K/sIhlqIkCY4WYxlWKESJN3/sKhBbqgpReEhKTu7B5BaheTy1q9AdDAXbmkKSBK8uwM/x08gRI3dgWqLkJlZqPLx5YKVSabvKyC3HxiTB9F9FNawQ256D0T+3gap4VECokD4puSpKH4PaHpVBzVG1dHIKat+xNTNRcihYZUUjtjKGKhwVCgw7TTEjKsr56hc4E4NgA5vJbgCYNU0zcA20dLlcPipSp2iPcuVyOqCe+GpuRCdpsowVZZZsgU4IvA2zAn2PeXG7WGx7vl0sFtfU5zCyamkGMZMN56h6jWVYbDLV220wK1UKR8V2+zigpn21SLU5zDEt4yopaCr01R8bUPnNAIO9SuRGo3SBd5YD6tGILVhED9V72XSspN0cDQ0MidxRqKefpo+5pxSP0ulRrIpowWDY2MRsbSQqc3i/wY7MQlwJHHo0OnZDN1Xbvsrw6QQDK2Bwnr5WkhFcRRDQmkj/x09mj86porGpYIgVJq38XO/IHRdPjlx15KvlEV2eV+BeGMrzSIm7lTyu7TERhEd/shpCmIDASMZQd10Ujk6KfJmioJo+KR7nWGBHDsaQPp0xWv3I8TPJpY03UK1CEUJq8CpfozCIeUr7eDRyo2BppVKL903Dsmu2YsHyDMWWreQ/IJvJwXJzC2uK7SgKe1M4TR9x0vYoneaZCe4knU7v0V5Tc2zL0SwlbPFkyNHcxlCFyHzDiKX3QnrEShUUUD/Qw74GI6mf16L5MxGbo30F0/iCtRq34wVz6Nxxu8TLLlCZwZENOYtgAkXL2otcIjYHdNN2NFu2TNkt/779VfSqWigH8vzn0L5sEShXiCOvg0fJRYhpuh8e2F+ZSN4FD3cTIdgt6jrjhDm6i8w6xayQobP9v1OJ3sfcVmxIR45lLfy2by8LhfIo/9z7FXcoY6IYpmEodkypFSHPCqqu++iszXsY/AyEGb87I3JgOE0m7jhVYJ/KJOtPzkSfaH8ua5omOwq2NhbdBBzctjDG1iwm76+T09NEiCHXWb+0ahL4YACfrD5BFdw2MXAV44v9GgFypUasTSVg1bLoNiiIE7fPskbOLlwvFYTVCCnA7GJ5DqJ7sNKK1fNz76Svf/W4VjMJmH3Tr25D8CYCPkVqsfuJj5NzILfHtbKQDeIIwUlRcj14A2G50ywq5iK2eh3eQSwE2VTbPk4O7kyP3LAhngg5lyi5wK9iv7xPNCwrs6Fhju+uF/cLvuN5++LFfD4zF8MFuBPZuAu6C7ngY3KXCTWhyPKLkPPLybaQW53ZhFkXW7LisCUJmgEL93Z/y77zDuSTlbXFWHK4XBWIEXK+JDYli9vZwiAaF3kxHNf2F4pzbbgNyt1V9fZHyEXBO9DwR8NiNkKOhJUaIecrw10eMXINDkOFesWc/gaDqLGvFWb5rb8M7UCOqEVV11+FieovtkDAEH32NXLavs1ZhvuLa7YI52PesKA30F8Y99u3EXcin4TM70so1GWCmShATr9A3EbuyZUfHe932ibfhZyGFR4Ht5BHMpFPTqfou5DbAXWzdz+NnMY0vgYlIfiuFiFX4zIRm8nj6nbZD7r0LtvNu5CDm4rBNLmBnK/DdXIVCT/jT0B3Ixe9YS6DHs5Ek23kEz3oY3sod4q+F8rf0WkOzoVTej6l55x3LqNTFDiX6Rn+KxfQ6ecAueqT61vIde95e8k8FBX9YbHkohB08++5k6gUd5aTQvDPGF0m95viybN+Sa67ISYTJNf5k9CDKzTg24L3TOhGYjEN7w5npbNl/WCaKg0q+XoHGir50Fb/QZ2/S/PWRmdKT3BoI2j0ySVhIoqi6uaKeHJxlQPhHiTVi5aen+uCKokuv+rP0TOqN8Uj/+/hX5S80zxodga9ab3emA4awNdtTSldvgHvRXnKym6mWU/R7f9eo1mppAYPg1Q7d3i4IqefLPjpO548kL15FkVhcvoaJYQKFd6oB54TI3+OPqeBpgt0ndQS7Fg/S10+pM5a3foy1W0uW91p4yGfrwwOzj62Ume9VGsA5CCDg1Kz0myjvRD5z5Yoebd3kK+U6qnLfOWg16lUbhqpVKteX/Z6lx14Gh+XvVar0/z48abXaHThGSxv4FHcnKWanTZ8xj9Jvno0nHx60112G/XSwcPDzfKy1eoC3sMD3Ex+etY7m14enE3z1NfBzWEtpFofoT/VmlLyXMTmEvPHYO3/6AZbJsMX4FolFTNzFc2BHPx82Uk1B/luqVOhqxCImmDYHsDm68tBs7ecpqbTzk29cdnq9qCrubxMNXudQX2ZX/MWltiRvgk3JgHGDBXXelzgleO7NocV2G22mt3LFPXhg1Tzpl5vAWIFrN/r1TvQUodlm2/mp50H6GpV6geVTgsiTBuiok+eEVU0YZsTlDAr6UiSRLgXnR0Zh055JCSKMESarPggIsGcCQyUpAxtkqBXlGCYJGbgo7KuyfU18vwgVYfFCFrzDI6NVn26iohuSOTSvWw1Vlftwt6KXIQHLnHL0u0RNGFXWfcoujZn5Oz2OIa7jZKFPv6o3KETesqyOVnX5sEXJuot5aPHJb1JUIg8w79Cz2YoX5BcXSMPuobIyekwetfU5nyGyua4BgnVNnt0cxZ9oDuGH9x9ww9u1wf0uHw7R+jwuXelZkX2FSI3u6q7ts1AezaboY2ShLIqd3b6WjFxR4M/qMCuStQz2EBVBJvTf8+kgrdI2ezaV++VnoPswBgve3T/bmNUjNkXicjGF7NdvpvKD8zfLOLv+i+Sfq78DxdkFglNKOG1AAAAAElFTkSuQmCC" alt="Logo">
+
+<p id="title">
+UAF GPA Calculator 2023</p>
+<p class="top">Sub Campus Toba Tek Singh</p>
+<br>
+<div class="dev">
+<button class="ddd">D</button>
+<p class="developer">
+
+Developed by Haider Ali Sehar <br>
+
+</p>
+</div>
+
+<div class="dev">
+<button class="ddd">C</button>
+<p class="developer">
+
+Department Computer Science <br>
+
+</p>
+</div>
+
+<div class="box">
+<label class="logo">Total Marks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain Marks</label>
+
+<input type="number" placeholder="Total Marks" value="" id="text_1" >
+<input type="number" placeholder="Obtained Marks" value=""  required id="text_2" >
+<input type="number" placeholder="Total Marks" value="" required id="text_3">
+<input type="number" placeholder="Obtained Marks" value="" required id="text_4"> 
+<input type= "number" placeholder="Total Marks" value="" id="text_4_1" required>
+<input type="number" placeholder="Obtained Marks" id="text_4_2" value="" required>
+<input type="number" placeholder="Total Marks" value="" id="text_4_3" required>
+<input type="number" placeholder="Obtained Marks" value="" id="text_4_4">
+
+
+
+
+<input type="number" placeholder="Total Marks" value="" id="text_11" >
+<input type="number" placeholder="Obtained Marks" value=""  required id="text_12" ><br>
+<input type="number" placeholder="Total Marks" value="" required id="text_13">
+<input type="number" placeholder="Obtained Marks" value="" required id="text_14"><br> 
+<input type="number" value="" placeholder="Total Marks" id="text_15" required>
+
+<input type="number" value="" placeholder="Obtained Marks" id="text_16" required><br>
+
+<input type="number" value="" placeholder="Total Marks" id="text_17" required>
+
+<input type="number" value="" placeholder="Obtained Marks" id="text_18" required>
+
+
+
+<button onclick="op_tion()"    class="btn">
+Calculate
+</button>
+
+</div>
+<br>
+<div class="R">
+<button class="ddd">R</button>
+<span id="result_1"></span>
+</div>
+<br>
+
+</body>
+</html>
